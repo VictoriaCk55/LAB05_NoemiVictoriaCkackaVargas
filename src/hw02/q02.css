@@ -1,74 +1,74 @@
 .container-1 {
-  width: 100px;
-  height: 100px;
+  grid-area: header;
   background-color: red;
   color: white;
   text-align: center;
 }
 
 .container-2 {
-  width: 100px;
-  height: 100px;
+  grid-area: col1;
   background-color: blue;
   color: white;
   text-align: center;
 }
 
 .container-3 {
-  width: 100px;
-  height: 100px;
+  grid-area: col2;
   background-color: lightgreen;
   color: white;
   text-align: center;
 }
 
 .container-4 {
-  width: 100px;
-  height: 100px;
+  grid-area: col3;
   background-color: black;
   color: white;
   text-align: center;
 }
 
 .container-5 {
-  width: 100px;
-  height: 100px;
+  grid-area: col5;
   background-color: orange;
   color: white;
   text-align: center;
 }
 
 .container-6 {
-  width: 100px;
-  height: 100px;
+  grid-area: col6;
   background-color: brown;
   color: white;
   text-align: center;
 }
 
 .container-7 {
-  width: 100px;
-  height: 100px;
+  grid-area: col7;
   background-color: green;
   color: white;
   text-align: center;
 }
 
 .container-8 {
-  width: 100px;
-  height: 100px;
+  grid-area: col8;
   background-color: aqua;
   color: white;
   text-align: center;
 }
 
 .container-9 {
-  width: 100px;
-  height: 100px;
+  grid-area: col9;
   background-color: aquamarine;
   color: white;
   text-align: center;
 }
 
 .parent {
-}  
+  display: grid;
+  grid-template-columns: repeat(5, 100px); 
+  grid-template-rows: repeat(5, 100px);
+  grid-gap: 0px;
+  grid-template-areas: 
+    "header header header header header"
+    "col1 col1 col2 col3 col3"
+    "col1 col1 col2 col5 col6"
+    "col7 col8 col9 col9 col9";
+}
